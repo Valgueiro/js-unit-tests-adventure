@@ -4,13 +4,14 @@
   "description": "1. Create the folder 2.",
   "main": "index.js",
   "scripts": {
-    "test": "qunit",
+    "test": "qunit --require esm ./tests/*",
     "start": "browser-sync start --config bs-config.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.7",
+    "esm": "^3.2.25",
     "qunit": "^2.17.2"
   },
   "dependencies": {}

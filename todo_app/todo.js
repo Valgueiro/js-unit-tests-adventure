@@ -4,17 +4,14 @@ class TodoList {
      */
     _todos = [];
 
+    /**
+     * if it should save and get from the localStorage
+     */
+    SHOULD_USE_LOCAL_STORAGE = true;
+
     // Get information from localStorage
     constructor() {
-        let list = [];
-        let getLocalStorageData = localStorage.getItem("New Todo");
-        if (getLocalStorageData == null) {
-            list = [];
-        } else {
-            list = JSON.parse(getLocalStorageData);
-        }
-
-        this._todos = list || [];
+        this._todos = this._getInformationFromLocalStorage() || [];
     }
 
     get todos() {
@@ -48,8 +45,27 @@ class TodoList {
     /**
      * @private
      */
-    _updateLocalStorage(){
-        localStorage.setItem("New Todo", JSON.stringify(this.todos));
+    _updateLocalStorage() {
+        if (this.SHOULD_USE_LOCAL_STORAGE) {
+            localStorage.setItem("New Todo", JSON.stringify(this.todos));
+        }
+    }
+
+    /**
+     * @private
+     * @returns {Array<Todo>}
+     */
+    _getInformationFromLocalStorage() {
+        let list = [];
+        if (this.SHOULD_USE_LOCAL_STORAGE) {
+            const getLocalStorageData = localStorage.getItem("New Todo");
+            if (getLocalStorageData == null) {
+                list = [];
+            } else {
+                list = JSON.parse(getLocalStorageData).map((todoItem) => new Todo(todoItem.name));
+            }
+        }
+        return list;
     }
 }
 

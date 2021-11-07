@@ -33,7 +33,7 @@ ADD_BTN.onclick = () => {
 
 function showTasks() {
   // Update pending tasks number
-  PENDING_TASKS_NUMBER.textContent = list.numberOfTodos;
+  PENDING_TASKS_NUMBER.textContent = todoList.numberOfTodos;
 
   if (todoList.hasTodos) {
     //if array length is greater than 0
