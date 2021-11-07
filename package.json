@@ -1,0 +1,16 @@
+{
+  "name": "todo-list-testing",
+  "version": "1.0.0",
+  "description": "1. Create the folder 2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "qunit",
+    "start": "browser-sync start --config bs-config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "qunit": "^2.17.2"
+  },
+  "dependencies": {}
+}
