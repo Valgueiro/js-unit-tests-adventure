@@ -18,3 +18,7 @@ $ npm install
 ```bash
 $ npm start
 ```
+
+3. Assim que iniciar, ele deve abrir uma aba do seu navegador favorito. Se não, acesse:
+   * http://localhost:3000 - para a aplicação de Lista de Tarefas (TODO list)
+   * http://localhost:3000/tests.html - para os testes 

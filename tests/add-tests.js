@@ -1,5 +1,5 @@
-import add from "./add.js";
-import { module, test } from "qunit";
+import add from "../add.js";
+const { module, test } = QUnit;
 
 module("add", function () {
   test("two numbers", (assert) => {

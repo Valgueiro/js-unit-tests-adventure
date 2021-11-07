@@ -20,7 +20,7 @@ module.exports = {
     "watchEvents": [
         "change"
     ],
-    "watch": false,
+    "watch": true,
     "ignore": [],
     "single": false,
     "watchOptions": {
