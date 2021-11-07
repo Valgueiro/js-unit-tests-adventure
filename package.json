@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "qunit --require esm ./tests/*",
-    "start": "browser-sync start --config bs-config.js"
+    "start": "browser-sync start --config config/bs-config.js"
   },
   "author": "",
   "license": "ISC",
