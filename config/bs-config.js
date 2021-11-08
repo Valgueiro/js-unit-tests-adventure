@@ -13,9 +13,7 @@
  |
  */
 module.exports = {
-    "ui": {
-        "port": 3001
-    },
+    "ui": false,
     "files": './todo_app',
     "watchEvents": [
         "change"

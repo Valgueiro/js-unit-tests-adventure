@@ -21,7 +21,7 @@ $ npm start
 
 3. Assim que iniciar, ele deve abrir uma aba do seu navegador favorito. Se não, acesse:
    * http://localhost:3000 - para a aplicação de Lista de Tarefas (TODO list)
-   * http://localhost:3000/tests.html - para os testes 
+   * http://localhost:3000/tests/index.html - para os testes 
 
 
 4. Para rodar os testes na linha de comando:
